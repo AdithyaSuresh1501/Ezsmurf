@@ -51,7 +51,7 @@ const Header = ({ history, loggedUser, getUser, getUserSuccess, logoutSuccess }:
     <div className="header">
       <AppBar
         className="title"
-        title="MOBILE SHOP"
+        title="EzSmurfmart"
         onTitleClick={() => history.push('/')}
         showMenuIconButton={false}
         zDepth={0}
