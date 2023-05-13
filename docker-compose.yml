@@ -12,9 +12,9 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
       MONGO_INITDB_DATABASE: mobileShop
     ports:
-      - '28017:28017'
+      - '27017:27017'
     healthcheck:
-      test: echo 'db.runCommand("ping").ok' | mongo db:28017/test --quiet
+      test: echo 'db.runCommand("ping").ok' | mongo db:27017/test --quiet
       interval: 10s
       timeout: 10s
       retries: 3
